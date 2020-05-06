@@ -1,0 +1,99 @@
+:root {
+  /* typography */
+  --base-root: 16px;
+  --ratio: 1.333;
+  --base-rem: 1rem;
+  --size-scale-1: calc(var(--base-rem) * var(--ratio));
+  --size-scale-2: calc(var(--size-scale-1) * var(--ratio));
+  --size-scale-3: calc(var(--size-scale-2) * var(--ratio));
+  --size-scale-4: calc(var(--size-scale-3) * var(--ratio));
+  --size-scale-5: calc(var(--size-scale-4) * var(--ratio));
+
+  /* colors */
+  --main-bg: #282c35;
+  --white: #fff;
+  --gray: #ccc;
+  --neutral-gray: #495061;
+  --light-blue: #49a8e4;
+  --black: #21252c;
+
+  font-size: var(--base-root);
+}
+
+body {
+  background-color: var(--main-bg);
+  color: #fff;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: var(--base-rem);
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin-top: var(--size-scale-2);
+  margin-bottom: var(--size-scale-2);
+}
+
+h1 {
+  font-size: var(--size-scale-5);
+}
+
+h2 {
+  font-size: var(--size-scale-4);
+}
+
+h3 {
+  font-size: var(--size-scale-3);
+}
+
+p {
+  margin-top: var(--size-scale-1);
+  margin-bottom: var(--size-scale-1);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  color: var(--white);
+  font-size: var(--size-scale-1);
+  font-style: italic;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 988px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1164px;
+  }
+}

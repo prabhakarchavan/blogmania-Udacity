@@ -1,0 +1,18 @@
+.header {
+  margin: var(--size-scale-1) auto;
+}
+
+.nav {
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  font-size: var(--size-scale-1);
+  font-weight: 700;
+  margin: var(--base-rem) 0;
+}
+
+.nav-links > a {
+  padding: 0 0.317rem;
+}
